@@ -1,8 +1,3 @@
-variable "prefix" {
-  type = string
-  default = ""
-}
-
 variable "name" {
   type = string
 }
@@ -52,4 +47,9 @@ variable "devices" {
   }))
 
   default = []
+}
+
+variable "project" {
+  type = string
+  default = null
 }

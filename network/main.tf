@@ -1,5 +1,6 @@
 resource "lxd_network" "network" {
-  name = "${var.prefix}_${var.name}"
+  name = var.name
+  project = var.project
 
   config = merge(
     var.config, {

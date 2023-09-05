@@ -1,6 +1,7 @@
 resource "lxd_instance" "instance" {
-  name = "${var.prefix}--${var.name}"
+  name = var.name
   ephemeral = var.ephemeral
+  project = var.project
 
   type = var.type
   image = var.image

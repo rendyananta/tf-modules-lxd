@@ -1,8 +1,3 @@
-variable "prefix" {
-  type = string
-  default = ""
-}
-
 variable "name" {
   type = string
 }
@@ -24,4 +19,9 @@ variable "limit_memory" {
 
 variable "root_storage_name" {
   type = string
+}
+
+variable "project" {
+  type = string
+  default = null
 }

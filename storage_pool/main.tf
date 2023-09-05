@@ -1,5 +1,6 @@
 resource "lxd_storage_pool" "storage_pool" {
-  name = "${var.prefix}_${var.name}"
+  name = var.name
+  project = var.project
   driver = "dir"
   config = var.config
 }
